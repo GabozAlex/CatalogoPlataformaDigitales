@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Streaming - Precios Bs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+            color: white;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .flyer {
+            width: 100%;
+            max-width: 450px;
+            background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
+            padding: 24px;
+            min-height: 100vh;
+            border-left: 1px solid #1e293b;
+            border-right: 1px solid #1e293b;
+            position: relative;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 16px;
+            margin-bottom: 20px;
+        }
+
+        .neon-glow {
+            text-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
+        }
+
+        .price-tag {
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 2px 10px;
+            border-radius: 99px;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        .platform-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .platform-row:last-child {
+            border-bottom: none;
+        }
+
+        .multi-price {
+            font-size: 0.7rem;
+            color: #94a3b8;
+            margin-top: 2px;
+        }
+
+        .category-title {
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #38bdf8;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        .whatsapp-btn {
+            background-color: #25d366;
+            color: white;
+            padding: 14px;
+            border-radius: 12px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: transform 0.2s;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-btn:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div class="flyer">
+        <!-- Encabezado -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-extrabold neon-glow mb-2">CATÁLOGO</h1>
+            <p class="text-sky-400 font-bold text-sm tracking-widest">PRECIOS EN BOLÍVARES (Bs)</p>
+        </header>
+
+        <!-- Cine y Series -->
+        <div class="glass-panel">
+            <div class="category-title">🎬 Cine y Entretenimiento</div>
+            
+            <div class="platform-row">
+                <span class="text-sm font-semibold">Netflix Premium</span>
+                <div class="text-right">
+                    <span class="price-tag">2.040 Bs</span>
+                    <div class="multi-price">3 Meses: 5.100 Bs</div>
+                </div>
+            </div>
+
+            <div class="platform-row">
+                <span class="text-sm font-semibold">Disney+ Premium (ESPN)</span>
+                <div class="text-right">
+                    <span class="price-tag">1.350 Bs</span>
+                    <div class="multi-price">3 Meses: 3.600 Bs</div>
+                </div>
+            </div>
+
+            <div class="platform-row">
+                <span class="text-sm font-semibold">HBO Max / Prime Video</span>
+                <div class="text-right">
+                    <span class="price-tag">900 Bs</span>
+                    <div class="multi-price">3 Meses: 2.250 Bs</div>
+                </div>
+            </div>
+
+            <div class="platform-row">
+                <span class="text-sm font-semibold">Paramount+ / Deezer</span>
+                <div class="text-right">
+                    <span class="price-tag">900 Bs</span>
+                    <div class="multi-price">3 Meses: 2.250 Bs</div>
+                </div>
+            </div>
+
+            <div class="platform-row">
+                <span class="text-sm font-semibold">Crunchyroll / Vix</span>
+                <div class="text-right">
+                    <span class="price-tag">675 Bs</span>
+                    <div class="multi-price">Vix 3m: 1.800 Bs</div>
+                </div>
+            </div>
+
+            <div class="platform-row">
+                <span class="text-sm font-semibold">Apple TV / Viki Rakuten</span>
+                <div class="text-right">
+                    <span class="price-tag">1.350 Bs</span>
+                    <div class="multi-price">Viki 3m: 3.600 Bs</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TV & IPTV -->
+        <div class="glass-panel">
+            <div class="category-title">📺 TV en Vivo e IPTV</div>
+            
+            <div class="platform-row">
+                <span class="text-sm font-semibold">Flujo TV</span>
+                <div class="text-right">
+                    <span class="price-tag">1.575 Bs</span>
+                    <div class="multi-price">3 Meses: 4.050 Bs</div>
+                </div>
+            </div>
+
+            <div class="platform-row">
+                <span class="text-sm font-semibold">IPTV Estándar</span>
+                <div class="text-right">
+                    <span class="price-tag">1.350 Bs</span>
+                    <div class="multi-price">3 Meses: 3.600 Bs</div>
+                </div>
+            </div>
+
+            <div class="platform-row">
+                <span class="text-sm font-semibold">Tele Latino</span>
+                <div class="text-right">
+                    <span class="price-tag">900 Bs</span>
+                    <div class="multi-price">3 Meses: 2.250 Bs</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Música y Aprendizaje -->
+        <div class="glass-panel">
+            <div class="category-title">🎵 Música y Aprendizaje</div>
+            
+            <div class="platform-row">
+                <span class="text-sm font-semibold">YouTube Music Premium</span>
+                <div class="text-right">
+                    <span class="price-tag">2.295 Bs</span>
+                    <div class="multi-price">3 Meses: 6.885 Bs</div>
+                </div>
+            </div>
+
+            <div class="platform-row">
+                <span class="text-sm font-semibold">Spotify Premium</span>
+                <div class="text-right">
+                    <span class="price-tag">1.575 Bs</span>
+                    <div class="multi-price">3 Meses: 4.050 Bs</div>
+                </div>
+            </div>
+
+            <div class="platform-row">
+                <span class="text-sm font-semibold">Amazon Music / Duolingo</span>
+                <div class="text-right">
+                    <span class="price-tag">1.575 / 2.025 Bs</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- IA & Trabajo -->
+        <div class="glass-panel">
+            <div class="category-title">🚀 IA y Productividad</div>
+            
+            <div class="platform-row">
+                <span class="text-sm font-semibold">ChatGPT Plus</span>
+                <span class="price-tag">5.400 Bs</span>
+            </div>
+
+            <div class="platform-row">
+                <span class="text-sm font-semibold">Xbox Game Pass</span>
+                <span class="price-tag">5.400 Bs</span>
+            </div>
+
+            <div class="platform-row">
+                <span class="text-sm font-semibold">Gemini IA</span>
+                <span class="price-tag">1.800 Bs</span>
+            </div>
+
+            <div class="platform-row">
+                <span class="text-sm font-semibold">Canva Pro / Edu</span>
+                <div class="text-right">
+                    <span class="price-tag">1.575 / 1.350 Bs</span>
+                </div>
+            </div>
+
+            <div class="platform-row">
+                <span class="text-sm font-semibold">CapCut (30 días)</span>
+                <div class="text-right">
+                    <span class="price-tag">1.755 Bs</span>
+                    <div class="text-[9px] text-red-400">Sin garantía</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botón de WhatsApp -->
+        <div class="mb-6">
+            <a href="https://wa.me/584123656230?text=Hola,%20quisiera%20adquirir%20una%20cuenta%20de%20streaming." target="_blank" class="whatsapp-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-2.32 0-4.591 1.342-4.591 3.858 0 .438.082.875.242 1.281 1.44-.359 3.102-.734 4.391-1.219l1.274 3.007c-1.626.671-3.781 1.109-5.461 1.421a3.84 3.84 0 0 1-.227 1.406c.656.328 1.547.484 2.453.484 2.32 0 4.591-1.342 4.591-3.858 0-2.516-2.271-3.858-4.591-3.858zm0-2c3.484 0 6.591 2.219 6.591 5.858 0 2.266-1.219 4.078-3.047 5.047l1.094 2.578c2.938-1.469 4.609-4.109 4.609-7.625 0-5-4.25-7.858-9.247-7.858-3.484 0-6.591 2.219-6.591 5.858 0 1.312.438 2.5 1.188 3.5l-1.625 4.844 5.047-1.625c.984.594 2.125.938 3.328.938 5 0 9.247-2.858 9.247-7.858 0-3.639-3.107-5.858-6.591-5.858z"/></svg>
+                PIDE POR WHATSAPP
+            </a>
+        </div>
+
+        <!-- Pie de página -->
+        <div class="text-center pb-12">
+            <div class="bg-white/10 rounded-2xl p-4 border border-white/20">
+                <p class="text-xs text-gray-400 mb-3">⚡ Activación Inmediata</p>
+                <div class="flex justify-center space-x-2">
+                    <span class="text-xs bg-sky-500/20 text-sky-400 px-3 py-1 rounded-full">Pago Móvil</span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
