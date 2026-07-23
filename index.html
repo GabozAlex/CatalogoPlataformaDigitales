@@ -50,6 +50,23 @@
             font-size: 0.85rem;
         }
 
+        .price-usd {
+            background: rgba(34, 197, 94, 0.15);
+            color: #22c55e;
+            padding: 1px 8px;
+            border-radius: 99px;
+            font-weight: 600;
+            font-size: 0.7rem;
+        }
+
+        .price-row {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
         .platform-row {
             display: flex;
             justify-content: space-between;
@@ -104,150 +121,270 @@
         <!-- Encabezado -->
         <header class="text-center mb-8">
             <h1 class="text-4xl font-extrabold neon-glow mb-2">CATÁLOGO</h1>
-            <p class="text-sky-400 font-bold text-sm tracking-widest">PRECIOS EN BOLÍVARES (Bs)</p>
+            <p class="text-sky-400 font-bold text-sm tracking-widest">PRECIOS EN Bs · <span class="text-green-400">USD</span></p>
         </header>
 
-        <!-- Cine y Series -->
+        <!-- Cine y Entretenimiento -->
         <div class="glass-panel">
             <div class="category-title">🎬 Cine y Entretenimiento</div>
             
             <div class="platform-row">
                 <span class="text-sm font-semibold">Netflix Premium</span>
                 <div class="text-right">
-                    <span class="price-tag">2.040 Bs</span>
-                    <div class="multi-price">3 Meses: 5.100 Bs</div>
+                    <div class="price-row">
+                        <span class="price-tag">1m: 4.050 Bs</span>
+                        <span class="price-usd">$5.49</span>
+                    </div>
+                    <div class="multi-price">3m: 10.800 Bs · <span class="text-green-400">$14.63</span></div>
                 </div>
             </div>
 
             <div class="platform-row">
                 <span class="text-sm font-semibold">Disney+ Premium (ESPN)</span>
                 <div class="text-right">
-                    <span class="price-tag">1.350 Bs</span>
-                    <div class="multi-price">3 Meses: 3.600 Bs</div>
+                    <div class="price-row">
+                        <span class="price-tag">1m: 3.150 Bs</span>
+                        <span class="price-usd">$4.27</span>
+                    </div>
+                    <div class="multi-price">3m: 8.100 Bs · <span class="text-green-400">$10.98</span></div>
                 </div>
             </div>
 
             <div class="platform-row">
-                <span class="text-sm font-semibold">HBO Max / Prime Video</span>
+                <span class="text-sm font-semibold">HBO Max</span>
                 <div class="text-right">
-                    <span class="price-tag">900 Bs</span>
-                    <div class="multi-price">3 Meses: 2.250 Bs</div>
+                    <div class="price-row">
+                        <span class="price-tag">1m: 1.800 Bs</span>
+                        <span class="price-usd">$2.44</span>
+                    </div>
+                    <div class="multi-price">3m: 4.500 Bs · <span class="text-green-400">$6.10</span></div>
                 </div>
             </div>
 
             <div class="platform-row">
-                <span class="text-sm font-semibold">Paramount+ / Deezer</span>
+                <span class="text-sm font-semibold">Prime Video</span>
                 <div class="text-right">
-                    <span class="price-tag">900 Bs</span>
-                    <div class="multi-price">3 Meses: 2.250 Bs</div>
+                    <div class="price-row">
+                        <span class="price-tag">1m: 1.700 Bs</span>
+                        <span class="price-usd">$2.30</span>
+                    </div>
+                    <div class="multi-price">3m: 4.500 Bs · <span class="text-green-400">$6.10</span></div>
                 </div>
             </div>
 
             <div class="platform-row">
-                <span class="text-sm font-semibold">Crunchyroll / Vix</span>
+                <span class="text-sm font-semibold">Paramount+</span>
                 <div class="text-right">
-                    <span class="price-tag">675 Bs</span>
-                    <div class="multi-price">Vix 3m: 1.800 Bs</div>
+                    <div class="price-row">
+                        <span class="price-tag">1m: 1.800 Bs</span>
+                        <span class="price-usd">$2.44</span>
+                    </div>
                 </div>
             </div>
 
             <div class="platform-row">
-                <span class="text-sm font-semibold">Apple TV / Viki Rakuten</span>
+                <span class="text-sm font-semibold">Vix Premium</span>
                 <div class="text-right">
-                    <span class="price-tag">1.350 Bs</span>
-                    <div class="multi-price">Viki 3m: 3.600 Bs</div>
+                    <div class="price-row">
+                        <span class="price-tag">1m: 1.350 Bs</span>
+                        <span class="price-usd">$1.83</span>
+                    </div>
+                    <div class="multi-price">3m: 3.600 Bs · <span class="text-green-400">$4.88</span></div>
+                </div>
+            </div>
+
+            <div class="platform-row">
+                <span class="text-sm font-semibold">Apple TV</span>
+                <div class="text-right">
+                    <div class="price-row">
+                        <span class="price-tag">1m: 2.700 Bs</span>
+                        <span class="price-usd">$3.66</span>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- TV & IPTV -->
+        <!-- Deportes y Anime -->
         <div class="glass-panel">
-            <div class="category-title">📺 TV en Vivo e IPTV</div>
+            <div class="category-title">🏀 Deportes y Anime</div>
             
             <div class="platform-row">
-                <span class="text-sm font-semibold">Flujo TV</span>
+                <span class="text-sm font-semibold">NBA Pass</span>
                 <div class="text-right">
-                    <span class="price-tag">1.575 Bs</span>
-                    <div class="multi-price">3 Meses: 4.050 Bs</div>
+                    <div class="price-row">
+                        <span class="price-tag">1m: 3.150 Bs</span>
+                        <span class="price-usd">$4.27</span>
+                    </div>
                 </div>
             </div>
 
             <div class="platform-row">
-                <span class="text-sm font-semibold">IPTV Estándar</span>
+                <span class="text-sm font-semibold">GXPRO</span>
                 <div class="text-right">
-                    <span class="price-tag">1.350 Bs</span>
-                    <div class="multi-price">3 Meses: 3.600 Bs</div>
+                    <div class="price-row">
+                        <span class="price-tag">1m: 4.050 Bs</span>
+                        <span class="price-usd">$5.49</span>
+                    </div>
+                    <div class="multi-price">3m: 10.800 Bs · <span class="text-green-400">$14.63</span></div>
+                </div>
+            </div>
+
+            <div class="platform-row">
+                <span class="text-sm font-semibold">Crunchyroll</span>
+                <div class="text-right">
+                    <div class="price-row">
+                        <span class="price-tag">1m: 2.250 Bs</span>
+                        <span class="price-usd">$3.05</span>
+                    </div>
+                    <div class="multi-price">3m: 5.850 Bs · <span class="text-green-400">$7.93</span></div>
+                </div>
+            </div>
+
+            <div class="platform-row">
+                <span class="text-sm font-semibold">Viki Rakuten</span>
+                <div class="text-right">
+                    <div class="price-row">
+                        <span class="price-tag">1m: 2.700 Bs</span>
+                        <span class="price-usd">$3.66</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="platform-row">
+                <span class="text-sm font-semibold">Drama Box</span>
+                <div class="text-right">
+                    <div class="price-row">
+                        <span class="price-tag">1m: 3.600 Bs</span>
+                        <span class="price-usd">$4.88</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TV en Vivo e IPTV -->
+        <div class="glass-panel">
+            <div class="category-title">📺 TV en Vivo e IPTV</div>
+            
+            <div class="platform-row">
+                <span class="text-sm font-semibold">FlujoTV</span>
+                <div class="text-right">
+                    <div class="price-row">
+                        <span class="price-tag">1m: 3.150 Bs</span>
+                        <span class="price-usd">$4.27</span>
+                    </div>
+                    <div class="multi-price">3m: 7.650 Bs · <span class="text-green-400">$10.37</span></div>
+                </div>
+            </div>
+
+            <div class="platform-row">
+                <span class="text-sm font-semibold">IPTV Standard</span>
+                <div class="text-right">
+                    <div class="price-row">
+                        <span class="price-tag">1m: 2.975 Bs</span>
+                        <span class="price-usd">$4.03</span>
+                    </div>
+                    <div class="multi-price">3m: 8.100 Bs · <span class="text-green-400">$10.98</span></div>
                 </div>
             </div>
 
             <div class="platform-row">
                 <span class="text-sm font-semibold">Tele Latino</span>
                 <div class="text-right">
-                    <span class="price-tag">900 Bs</span>
-                    <div class="multi-price">3 Meses: 2.250 Bs</div>
+                    <div class="price-row">
+                        <span class="price-tag">1m: 1.900 Bs</span>
+                        <span class="price-usd">$2.57</span>
+                    </div>
+                    <div class="multi-price">3m: 4.750 Bs · <span class="text-green-400">$6.44</span></div>
                 </div>
             </div>
         </div>
 
-        <!-- Música y Aprendizaje -->
+        <!-- Música -->
         <div class="glass-panel">
-            <div class="category-title">🎵 Música y Aprendizaje</div>
+            <div class="category-title">🎵 Música</div>
             
-            <div class="platform-row">
-                <span class="text-sm font-semibold">YouTube Music Premium</span>
-                <div class="text-right">
-                    <span class="price-tag">2.295 Bs</span>
-                    <div class="multi-price">3 Meses: 6.885 Bs</div>
-                </div>
-            </div>
-
             <div class="platform-row">
                 <span class="text-sm font-semibold">Spotify Premium</span>
                 <div class="text-right">
-                    <span class="price-tag">1.575 Bs</span>
-                    <div class="multi-price">3 Meses: 4.050 Bs</div>
+                    <div class="price-row">
+                        <span class="price-tag">1m: 3.150 Bs</span>
+                        <span class="price-usd">$4.27</span>
+                    </div>
+                    <div class="multi-price">3m: 8.100 Bs · <span class="text-green-400">$10.98</span></div>
                 </div>
             </div>
 
             <div class="platform-row">
-                <span class="text-sm font-semibold">Amazon Music / Duolingo</span>
+                <span class="text-sm font-semibold">YouTube Premium (con Music)</span>
                 <div class="text-right">
-                    <span class="price-tag">1.575 / 2.025 Bs</span>
+                    <div class="price-row">
+                        <span class="price-tag">1m: 4.050 Bs</span>
+                        <span class="price-usd">$5.49</span>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- IA & Trabajo -->
+        <!-- IA y Productividad -->
         <div class="glass-panel">
             <div class="category-title">🚀 IA y Productividad</div>
             
             <div class="platform-row">
                 <span class="text-sm font-semibold">ChatGPT Plus</span>
-                <span class="price-tag">5.400 Bs</span>
-            </div>
-
-            <div class="platform-row">
-                <span class="text-sm font-semibold">Xbox Game Pass</span>
-                <span class="price-tag">5.400 Bs</span>
-            </div>
-
-            <div class="platform-row">
-                <span class="text-sm font-semibold">Gemini IA</span>
-                <span class="price-tag">1.800 Bs</span>
-            </div>
-
-            <div class="platform-row">
-                <span class="text-sm font-semibold">Canva Pro / Edu</span>
                 <div class="text-right">
-                    <span class="price-tag">1.575 / 1.350 Bs</span>
+                    <div class="price-row">
+                        <span class="price-tag">1m: 10.200 Bs</span>
+                        <span class="price-usd">$13.82</span>
+                    </div>
                 </div>
             </div>
 
             <div class="platform-row">
-                <span class="text-sm font-semibold">CapCut (30 días)</span>
+                <span class="text-sm font-semibold">Gemini IA</span>
                 <div class="text-right">
-                    <span class="price-tag">1.755 Bs</span>
-                    <div class="text-[9px] text-red-400">Sin garantía</div>
+                    <div class="price-row">
+                        <span class="price-tag">1m: 3.600 Bs</span>
+                        <span class="price-usd">$4.88</span>
+                    </div>
+                    <div class="multi-price">3m: 9.000 Bs · <span class="text-green-400">$12.20</span></div>
+                </div>
+            </div>
+
+            <div class="platform-row">
+                <span class="text-sm font-semibold">Canva Pro Edu</span>
+                <div class="text-right">
+                    <div class="price-row">
+                        <span class="price-tag">1m: 2.250 Bs</span>
+                        <span class="price-usd">$3.05</span>
+                    </div>
+                    <div class="multi-price">3m: 5.850 Bs · <span class="text-green-400">$7.93</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VPN y Seguridad -->
+        <div class="glass-panel">
+            <div class="category-title">🔒 VPN y Seguridad</div>
+            
+            <div class="platform-row">
+                <span class="text-sm font-semibold">Surfshark VPN</span>
+                <div class="text-right">
+                    <div class="price-row">
+                        <span class="price-tag">1m: 2.700 Bs</span>
+                        <span class="price-usd">$3.66</span>
+                    </div>
+                    <div class="multi-price">3m: 7.200 Bs · <span class="text-green-400">$9.76</span></div>
+                </div>
+            </div>
+
+            <div class="platform-row">
+                <span class="text-sm font-semibold">NordVPN</span>
+                <div class="text-right">
+                    <div class="price-row">
+                        <span class="price-tag">1m: 2.700 Bs</span>
+                        <span class="price-usd">$3.66</span>
+                    </div>
+                    <div class="multi-price">3m: 7.200 Bs · <span class="text-green-400">$9.76</span></div>
                 </div>
             </div>
         </div>
